@@ -12,20 +12,18 @@ sudo rm -rf /usr/local/go
 curl -L https://go.dev/dl/go1.22.7.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
-Node Installation
 ```
 
-Node Name
+**Node Installation**
 
-Your Node Name
-Port prefix
 
-169
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf omniflixhub
 git clone https://github.com/OmniFlix/omniflixhub
 cd omniflixhub
 git checkout v5.2.0
+```
 
 # Build binary
 make install
