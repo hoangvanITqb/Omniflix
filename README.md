@@ -25,8 +25,10 @@ cd omniflixhub
 git checkout v5.2.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.omniflixhub/cosmovisor/genesis/bin
