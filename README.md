@@ -30,9 +30,11 @@ git checkout v5.2.0
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.omniflixhub/cosmovisor/genesis/bin
 ln -s $HOME/.omniflixhub/cosmovisor/genesis $HOME/.omniflixhub/cosmovisor/current -f
+```
 
 # Copy binary to cosmovisor directory
 cp $(which omniflixhubd) $HOME/.omniflixhub/cosmovisor/genesis/bin
