@@ -36,8 +36,10 @@ mkdir -p $HOME/.omniflixhub/cosmovisor/genesis/bin
 ln -s $HOME/.omniflixhub/cosmovisor/genesis $HOME/.omniflixhub/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which omniflixhubd) $HOME/.omniflixhub/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 omniflixhubd config chain-id omniflixhub-1
