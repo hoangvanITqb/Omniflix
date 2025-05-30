@@ -41,10 +41,12 @@ ln -s $HOME/.omniflixhub/cosmovisor/genesis $HOME/.omniflixhub/cosmovisor/curren
 cp $(which omniflixhubd) $HOME/.omniflixhub/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 omniflixhubd config chain-id omniflixhub-1
 omniflixhubd config keyring-backend file
 omniflixhubd config node tcp://localhost:16957
+```
 
 # Initialize the node
 omniflixhubd init "Your Node Name" --chain-id omniflixhub-1
