@@ -48,8 +48,11 @@ omniflixhubd config keyring-backend file
 omniflixhubd config node tcp://localhost:16957
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 omniflixhubd init "Your Node Name" --chain-id omniflixhub-1
+```
+
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/omniflixhub/genesis.json > $HOME/.omniflixhub/config/genesis.json
