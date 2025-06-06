@@ -60,8 +60,10 @@ curl -L https://snapshots.nodejumper.io/omniflixhub/genesis.json > $HOME/.omnifl
 curl -L https://snapshots.nodejumper.io/omniflixhub/addrbook.json > $HOME/.omniflixhub/config/addrbook.json
 ```
 
-# Set seeds
+**Set seeds**
+```
 sed -i -e 's|^seeds *=.*|seeds = "babc3f3f7804933265ec9c40ad94f4da8e9e0017@seed.rhinostake.com:16956,ebc272824924ea1a27ea3183dd0b9ba713494f83@omniflixhub-mainnet-seed.autostake.com:27306,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:16956,9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152@omniflix.seed.mzonder.com:10656,6b0ffcce9b59b91ceb8eea5d4599e27707e3604a@seeds.stakeup.tech:10215,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,574b37cc6e80663e70673cbe848147c2643ca48e@35.240.187.174:26656,ebc272824924ea1a27ea3183dd0b9ba713494f83@omniflixhub-mainnet-peer.autostake.com:27306,d8e371758cdb310906bc32ba0bb922642bb33536@65.21.91.99:26756,82feb443470ff81afa830e15fea387cac4849aac@mainnet.omniflix.peers.stakr.space:36656"|' $HOME/.omniflixhub/config/config.toml
+```
 
 # Set minimum gas price
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.001uflix"|' $HOME/.omniflixhub/config/app.toml
