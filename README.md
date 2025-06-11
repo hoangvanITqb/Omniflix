@@ -70,12 +70,14 @@ sed -i -e 's|^seeds *=.*|seeds = "babc3f3f7804933265ec9c40ad94f4da8e9e0017@seed.
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.001uflix"|' $HOME/.omniflixhub/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.omniflixhub/config/app.toml
+```
 
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.omniflixhub/config/config.toml
