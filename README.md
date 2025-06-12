@@ -79,8 +79,10 @@ sed -i \
   $HOME/.omniflixhub/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.omniflixhub/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:16917%; s%:8080%:16980%; s%:9090%:16990%; s%:9091%:16991%; s%:8545%:16945%; s%:8546%:16946%; s%:6065%:16965%" $HOME/.omniflixhub/config/app.toml
