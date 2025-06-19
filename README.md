@@ -84,9 +84,11 @@ sed -i \
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.omniflixhub/config/config.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:16917%; s%:8080%:16980%; s%:9090%:16990%; s%:9091%:16991%; s%:8545%:16945%; s%:8546%:16946%; s%:6065%:16965%" $HOME/.omniflixhub/config/app.toml
 sed -i -e "s%:26658%:16958%; s%:26657%:16957%; s%:6060%:16960%; s%:26656%:16956%; s%:26660%:16961%" $HOME/.omniflixhub/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/omniflixhub/omniflixhub_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.omniflixhub"
