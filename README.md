@@ -95,8 +95,10 @@ sed -i -e "s%:26658%:16958%; s%:26657%:16957%; s%:6060%:16960%; s%:26656%:16956%
 curl "https://snapshots.nodejumper.io/omniflixhub/omniflixhub_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.omniflixhub"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/omniflixhub.service > /dev/null << EOF
